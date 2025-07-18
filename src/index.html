@@ -2,15 +2,22 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Code structuring</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Darty Reserve</title>
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
 		<canvas class="webgl"></canvas>
+		<div class="nouvelle-recherche">
+			<button class="btn-nouvelle-recherche">Nouvelle Recherche</button>
+		</div>
+		<div class="carre-selct">
+			<select name="Chercher" class="chercher">
+				<option value="" value2="">Je cherche ...</option>
+			</select>
+			<p class="alert">Si tu cherche rien retourne en surface !!!</p>
+			<button class="chercher">Chercher</button>
+		</div>
 		<script type="module" src="./script.js"></script>
 	</body>
 </html>

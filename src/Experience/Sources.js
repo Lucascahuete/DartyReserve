@@ -1,7 +1,12 @@
 export default [
     {
-        name: 'objectModel',
+        name: 'reserveModel',
         type: 'gltfModel',
-        path: 'models/shelff.gltf'
-    }
+        path: 'models/reserve.glb'
+    },
+    {
+        name: 'etagereTexture',
+        type: 'texture',
+        path: 'textures/etagere.jpg'
+    },
 ]

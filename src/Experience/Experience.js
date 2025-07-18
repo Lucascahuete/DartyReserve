@@ -1,26 +1,23 @@
 //test
-import * as THREE from 'three'
+import * as THREE from "three";
 import Sizes from "./Utils/Sizes";
 import Time from "./Utils/Time";
-import Camera from './Camera';
-import Renderer from './Renderer';
-import World from './World/World';
-import Ressources from './Utils/Ressources';
-import Debug  from './Utils/Debug';
-import sources from './Sources'
+import Camera from "./Camera";
+import Renderer from "./Renderer";
+import World from "./World/World";
+import Ressources from "./Utils/Ressources";
+import Debug from "./Utils/Debug";
+import sources from "./Sources";
 
-let instance = null
+let instance = null;
 
-export default class Experience 
-{
-	constructor(canvas) 
-	{
-		if(instance)
-		{
-			return instance
+export default class Experience {
+	constructor(canvas) {
+		if (instance) {
+			return instance;
 		}
 
-		instance = this
+		instance = this;
 
 		//Global access
 		window.experience = this;
@@ -29,76 +26,62 @@ export default class Experience
 		this.canvas = canvas;
 
 		//Setup
-		this.debug = new Debug()
+		this.debug = new Debug();
 		this.sizes = new Sizes();
 		this.time = new Time();
-		this.scene = new THREE.Scene()
-		this.ressources = new Ressources(sources)
-		this.camera = new Camera()
-		this.renderer = new Renderer()
-		this.world = new World()
-
+		this.scene = new THREE.Scene();
+		this.ressources = new Ressources(sources);
+		this.camera = new Camera();
+		this.renderer = new Renderer();
+		this.world = new World();
 
 		//Sizes resize event
-		this.sizes.on('resize', () =>
-		{
-			this.resize()
-		})
+		this.sizes.on("resize", () => {
+			this.resize();
+		});
 
 		//Time tick event
-		this.time.on('tick', () =>
-		{
-			this.update()
-		})
+		this.time.on("tick", () => {
+			this.update();
+		});
 	}
 
-	resize()
-	{
-		this.camera.resize()
-		this.renderer.resize()
+	resize() {
+		this.camera.resize();
+		this.renderer.resize();
 	}
 
-	update()
-	{
-		this.camera.update()
-		this.world.update()
-		this.renderer.update()
+	update() {
+		this.camera.update();
+		this.world.update();
+		this.renderer.update();
 	}
 
-	destroy()
-	{
-		this.sizes.off('resize')
-		this.time.off('tick')
+	destroy() {
+		this.sizes.off("resize");
+		this.time.off("tick");
 
 		//traverse the whole scene
 
-		this.scene.traverse((child) => 
-		{
-			 if(child instanceof THREE.Mesh)
-			 {
-				child.geometry.dispose()
+		this.scene.traverse((child) => {
+			if (child instanceof THREE.Mesh) {
+				child.geometry.dispose();
 
-				for(const key in child.material)
-				{
-					const value = child.material[key]
+				for (const key in child.material) {
+					const value = child.material[key];
 
-					if(value && typeof value.dispose === 'function')
-					{
-						value.dispose()
+					if (value && typeof value.dispose === "function") {
+						value.dispose();
 					}
 				}
-			 }
-		})
+			}
+		});
 
-		this.camera.controls.dispose()
-		this.renderer.instance.dispose()
+		this.camera.controls.dispose();
+		this.renderer.instance.dispose();
 
-		if(this.debug.active)
-		{
-			this.debug.ui.destroy()
+		if (this.debug.active) {
+			this.debug.ui.destroy();
 		}
 	}
-
-
 }
-
