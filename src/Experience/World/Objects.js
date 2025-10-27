@@ -48,11 +48,17 @@ export default class Objects {
 	}
 
 	find(rac) {
-		console.log(rac);
-		this.model.traverse((child) => {
-			if (child.name === rac) {
-				child.material = this.selectColor;
-			}
+		if (typeof rac === "string") {
+			rac = rac.split(","); // transforme "mesh_1,mesh_2" en ["mesh_1", "mesh_2"]
+		}
+
+		rac.forEach((element) => {
+			element = element.trim(); // enlève les espaces éventuels
+			this.model.traverse((child) => {
+				if (child.name === element) {
+					child.material = this.selectColor;
+				}
+			});
 		});
 	}
 
