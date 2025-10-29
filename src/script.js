@@ -13,6 +13,17 @@ nouvelleRecherche.className = "hiden";
 const boutonNouvelleRecherche = document.querySelector(
 	"button.btn-nouvelle-recherche"
 );
+const btnConditions = document.getElementById("btn-conditions");
+const btnFermerConditions = document.getElementById("btn-fermer-conditions");
+const conditionsContainer = document.getElementById("conditions-container");
+
+btnConditions.addEventListener("click", () => {
+	conditionsContainer.classList.toggle("hidden");
+});
+
+btnFermerConditions.addEventListener("click", () => {
+	conditionsContainer.classList.add("hidden");
+});
 Produit.sort((a, b) => a.name.localeCompare(b.name));
 for (const element of Produit) {
 	const opt = document.createElement("option");
