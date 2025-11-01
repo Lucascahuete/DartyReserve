@@ -1,6 +1,5 @@
-import { ThreeMFLoader } from "three/examples/jsm/Addons.js";
-import Experience from "../Experience";
-import * as THREE from "three";
+import Experience from "../Experience.js";
+import * as THREE from "/node_modules/three/build/three.module.js";
 
 export default class Objects {
 	constructor() {

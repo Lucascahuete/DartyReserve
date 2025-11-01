@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gestion des Produits</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<h1>Gestion des Produits</h1>
+
+		<div class="menu">
+			<a href="index.html">⬅ Retour à l'accueil</a>
+		</div>
+
+		<div class="form-container">
+			<h2>Ajouter ou Modifier un Produit</h2>
+			<form id="produitForm">
+				<label for="nom">Nom du produit :</label>
+				<input type="text" id="nom" placeholder="Ex: MicroOndes" required />
+
+				<label for="rack">Rack (séparé par des virgules) :</label>
+				<input
+					type="text"
+					id="rack"
+					placeholder="Ex: mesh_1, mesh_2"
+					required
+				/>
+
+				<button type="submit" id="btn-save">Enregistrer</button>
+			</form>
+		</div>
+
+		<div class="liste-produits">
+			<h2>Liste des produits existants</h2>
+			<ul id="liste"></ul>
+		</div>
+
+		<script type="module" src="./admin.js"></script>
+	</body>
+</html>

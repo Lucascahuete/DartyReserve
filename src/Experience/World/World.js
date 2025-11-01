@@ -1,6 +1,6 @@
-import Experience from "../Experience";
-import Environment from "./Environment";
-import Object from "./Objects";
+import Experience from "../Experience.js";
+import Environment from "./Environment.js";
+import Object from "./Objects.js";
 export default class World {
 	constructor() {
 		this.experience = new Experience();
