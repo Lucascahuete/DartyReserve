@@ -1,5 +1,5 @@
-import Experience from "./Experience/Experience.js";
-import Produit from "./Experience/Produit.js";
+import Experience from "./Experience/Experience";
+import Produit from "./Experience/Produit";
 const experience = new Experience(document.querySelector("canvas.webgl"));
 
 const boutonChercher = document.querySelector("button.chercher");

@@ -1,13 +1,13 @@
 //test
-import * as THREE from "/node_modules/three/build/three.module.js";
-import Sizes from "./Utils/Sizes.js";
-import Time from "./Utils/Time.js";
-import Camera from "./Camera.js";
-import Renderer from "./Renderer.js";
-import World from "./World/World.js";
-import Ressources from "./Utils/Ressources.js";
-import Debug from "./Utils/Debug.js";
-import sources from "./Sources.js";
+import * as THREE from "three";
+import Sizes from "./Utils/Sizes";
+import Time from "./Utils/Time";
+import Camera from "./Camera";
+import Renderer from "./Renderer";
+import World from "./World/World";
+import Ressources from "./Utils/Ressources";
+import Debug from "./Utils/Debug";
+import sources from "./Sources";
 
 let instance = null;
 
