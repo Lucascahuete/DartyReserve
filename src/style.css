@@ -1,6 +1,99 @@
 * {
+	/* Editor page layout */
+	.nav {
+		position: absolute;
+		top: 0.5rem;
+		left: 0.5rem;
+		z-index: 10;
+	}
+
+	.editor-actions,
+	.editor-form,
+	.editor-list {
+		position: relative;
+		z-index: 1;
+		margin: 1rem auto;
+		width: min(900px, 90vw);
+		color: #fff;
+	}
+
+	/* Form */
+	#form {
+		display: grid;
+		grid-template-columns: 1fr 1fr auto auto;
+		gap: 0.75rem;
+		align-items: end;
+	}
+
+	#form label {
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+		font-weight: 600;
+	}
+
+	#form input[type="text"] {
+		background: rgba(0, 0, 0, 0.5);
+		color: #fff;
+		border: 1px solid #444;
+		border-radius: 0.6em;
+		padding: 0.75em 1em;
+		font-size: 14px;
+		outline: none;
+	}
+
+	#form input[type="text"]:focus {
+		border-color: #888;
+		box-shadow: 0 0 0 2px rgba(177, 176, 255, 0.3);
+	}
+
+	/* Table */
+	.table {
+		width: min(900px, 90vw);
+		margin: 0 auto;
+		border-collapse: collapse;
+		background: rgba(0, 0, 0, 0.35);
+		border-radius: 12px;
+		overflow: hidden;
+	}
+
+	.table thead th {
+		text-align: left;
+		background: rgba(255, 255, 255, 0.08);
+		color: #fff;
+		padding: 0.75rem 1rem;
+		font-weight: 700;
+		font-size: 14px;
+	}
+
+	.table tbody td {
+		padding: 0.6rem 1rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.06);
+		font-size: 14px;
+	}
+
+	.table tbody tr:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	/* Actions in table */
+	.table td button {
+		margin-right: 0.5rem;
+		padding: 0.5em 0.9em;
+		font-size: 12px;
+	}
+
+	/* Scroll area for long lists */
+	.editor-list {
+		max-height: 70vh;
+		overflow: auto;
+	}
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	background-color: #000;
 }
 
 .hiden {
@@ -169,4 +262,100 @@ body {
 	text-decoration: underline;
 	cursor: pointer;
 	font-size: 0.5em;
+}
+
+/* Nav editor */
+.nav-editor {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	z-index: 10;
+}
+
+.nav-editor .btn-editer {
+	display: inline-block;
+	text-decoration: none;
+	--glow-color: rgb(177, 176, 255);
+	--glow-spread-color: rgba(123, 141, 255, 0.781);
+	--enhanced-glow-color: rgb(206, 206, 255);
+	--btn-color: rgb(61, 61, 136);
+	border: 0.25em solid var(--glow-color);
+	padding: 0.6em 1.2em;
+	color: var(--glow-color);
+	font-size: 12px;
+	font-weight: bold;
+	background-color: var(--btn-color);
+	border-radius: 0.8em;
+	outline: none;
+	box-shadow: 0 0 1em 0.25em var(--glow-color),
+		0 0 4em 1em var(--glow-spread-color),
+		inset 0 0 0.75em 0.25em var(--glow-color);
+	text-shadow: 0 0 0.5em var(--glow-color);
+	position: relative;
+	transition: all 0.3s;
+}
+
+.nav-editor .btn-editer:after {
+	pointer-events: none;
+	content: "";
+	position: absolute;
+	top: 120%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: var(--glow-spread-color);
+	filter: blur(2em);
+	opacity: 0.7;
+	transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.nav-editor .btn-editer:hover {
+	color: var(--btn-color);
+	background-color: var(--glow-color);
+	box-shadow: 0 0 1em 0.25em var(--glow-color),
+		0 0 4em 2em var(--glow-spread-color),
+		inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+.nav-editor .btn-editer:active {
+	box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+		0 0 2.5em 2em var(--glow-spread-color),
+		inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+/* Buttons sans néon dans l'éditeur */
+.editor-list .btn-edit,
+.editor-list .btn-delete {
+	/* override du style global des boutons */
+	border: 1px solid #444;
+	background: #222;
+	color: #fff;
+	box-shadow: none;
+	text-shadow: none;
+	padding: 0.45em 0.9em;
+	border-radius: 6px;
+	font-size: 12px;
+	font-weight: 600;
+	outline: none;
+	cursor: pointer;
+	transition: background-color 0.2s ease, color 0.2s ease, transform 0.05s ease;
+}
+
+/* supprimer le pseudo-élément lumineux */
+.editor-list .btn-edit::after,
+.editor-list .btn-delete::after {
+	content: none !important;
+}
+
+/* hover/active sobres */
+.editor-list .btn-edit:hover,
+.editor-list .btn-delete:hover {
+	background: #2a2a2a;
+	color: #eaeaea;
+}
+
+.editor-list .btn-edit:active,
+.editor-list .btn-delete:active {
+	transform: translateY(1px);
+	box-shadow: none;
 }

@@ -1,5 +1,12 @@
 import Experience from "./Experience/Experience";
 import Produit from "./Experience/Produit";
+const storedProduits = localStorage.getItem("produits");
+const ProduitsNormalized = (
+	storedProduits ? JSON.parse(storedProduits) : Produit
+).map((p) => ({
+	name: p.name,
+	rack: p.rack,
+}));
 const experience = new Experience(document.querySelector("canvas.webgl"));
 
 const boutonChercher = document.querySelector("button.chercher");
@@ -24,8 +31,8 @@ btnConditions.addEventListener("click", () => {
 btnFermerConditions.addEventListener("click", () => {
 	conditionsContainer.classList.add("hidden");
 });
-Produit.sort((a, b) => a.name.localeCompare(b.name));
-for (const element of Produit) {
+ProduitsNormalized.sort((a, b) => a.name.localeCompare(b.name));
+for (const element of ProduitsNormalized) {
 	const opt = document.createElement("option");
 	opt.text = element.name;
 	opt.value = element.rack;

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Éditeur de produits</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="nav">
+			<a href="./index.html">← Retour</a>
+		</div>
+		<h1>Éditer les produits</h1>
+
+		<section class="editor-actions">
+			<button id="reset">Réinitialiser Liste</button>
+			<button id="export">Exporter JSON</button>
+		</section>
+
+		<section class="editor-form">
+			<h2>Ajouter / Modifier</h2>
+			<form id="form">
+				<input type="hidden" id="index" />
+				<label>
+					Nom
+					<input id="name" type="text" placeholder="Nom du produit" />
+				</label>
+				<label>
+					Rack
+					<input id="rack" type="text" placeholder="R1, R2 ou R22" />
+				</label>
+				<button type="submit" id="save">Enregistrer</button>
+				<button type="button" id="cancel">Annuler</button>
+			</form>
+		</section>
+
+		<section class="editor-list">
+			<h2>Liste</h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Nom</th>
+						<th>Rack</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody id="tbody"></tbody>
+			</table>
+		</section>
+
+		<script type="module" src="./editeur.js"></script>
+	</body>
+</html>

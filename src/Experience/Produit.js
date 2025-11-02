@@ -1,99 +1,99 @@
 export default [
 	{
 		name: "MicroOndes",
-		rack: ["mesh_1", "mesh_2", "mesh_3"],
+		rack: ["R1", "R2", "R3"],
 	},
 	{
 		name: "Robot Patissier",
-		rack: ["mesh_2", "mesh_3"],
+		rack: ["R2", "R3"],
 	},
 	{
 		name: "Blender",
-		rack: "mesh_22",
+		rack: "R22",
 	},
 	{
 		name: "Toner",
-		rack: ["mesh_22", "mesh_21"],
+		rack: ["R22", "R21"],
 	},
 	{
 		name: "Blender Chauffant",
-		rack: "mesh_22",
+		rack: "R22",
 	},
 	{
 		name: "Cafetière Expresso",
-		rack: ["mesh_18", "mesh_19"],
+		rack: ["R18", "R19"],
 	},
 	{
 		name: "Pese Personne",
-		rack: "mesh_1",
+		rack: "R1",
 	},
 	{
 		name: "Fer a Repasser",
-		rack: "mesh_12",
+		rack: "R12",
 	},
 	{
 		name: "Ecran PC",
-		rack: ["mesh_4", "mesh_5"],
+		rack: ["R4", "R5"],
 	},
 	{
 		name: "Unité Centrale",
-		rack: "mesh_4",
+		rack: "R4",
 	},
 	{
 		name: "Imprimante",
-		rack: ["mesh_6", "mesh_7"],
+		rack: ["R6", "R7"],
 	},
 	{
 		name: "Trotinette Électrique",
-		rack: ["mesh_4", "mesh_5", "mesh_6", "mesh_7"],
+		rack: ["R4", "R5", "R6", "R7"],
 	},
 	{
 		name: "Centrale Vapeur",
-		rack: ["mesh_13", "mesh_12"],
+		rack: ["R13", "R12"],
 	},
 	{
 		name: "Nettoyeur Vapeur",
-		rack: ["mesh_13", "mesh_14", "mesh_15"],
+		rack: ["R13", "R14", "R15"],
 	},
 	{
 		name: "Déshumidificateur",
-		rack: ["mesh_30", "mesh_31"],
+		rack: ["R28", "R29"],
 	},
 	{
 		name: "Humidificateur",
-		rack: ["mesh_30", "mesh_31"],
+		rack: ["R28", "R29"],
 	},
 	{
 		name: "Chauffage Soufflant",
-		rack: ["mesh_30", "mesh_31"],
+		rack: ["R28", "R29"],
 	},
 	{
 		name: "Radiateur Électrique",
-		rack: ["mesh_30", "mesh_31"],
+		rack: ["R28", "R29"],
 	},
 	{
 		name: "Purificateur d'Air",
-		rack: ["mesh_30", "mesh_31"],
+		rack: ["R28", "R29"],
 	},
 	{
 		name: "Aspirateur Main",
-		rack: ["mesh_11", "mesh_10"],
+		rack: ["R11", "R10"],
 	},
 	{
 		name: "Crépière",
-		rack: "mesh_29",
+		rack: "R27",
 	},
 	{
 		name: "Cocotte Minute",
-		rack: "mesh_16",
+		rack: "R16",
 	},
 	{
 		name: "Friteuse",
-		rack: "mesh_35",
+		rack: "R30",
 	},
 	{
 		name: "Air Fryer",
-		rack: ["mesh_37", "mesh_36", "mesh_35"],
+		rack: ["R32", "R31", "R30"],
 	},
 	{
 		name: "Cookeo",
@@ -101,84 +101,80 @@ export default [
 	},
 	{
 		name: "Aspirateur Traineau",
-		rack: ["mesh_11", "mesh_9", "mesh_10"],
+		rack: ["R11", "R9", "R10"],
 	},
 	{
 		name: "Aspirateur Robot",
-		rack: "mesh_8",
+		rack: "R8",
 	},
 	{
 		name: "Aspirateur Balai",
-		rack: ["mesh_13", "mesh_14", "mesh_15"],
+		rack: ["R13", "R14", "R15"],
 	},
 	{
 		name: "Ventilateur",
-		rack: ["mesh_30", "mesh_31"],
+		rack: ["R28", "R29"],
 	},
 	{
 		name: "Plancha",
-		rack: ["mesh_29", "mesh_28"],
+		rack: ["R27", "R26"],
 	},
 	{
 		name: "Tireuse a biere",
-		rack: ["mesh_29", "mesh_28"],
+		rack: ["R27", "R26"],
 	},
 	{
 		name: "Enceinte",
-		rack: ["mesh_24", "mesh_25"],
+		rack: ["R23", "R24"],
 	},
 	{
 		name: "Platine Vinyle",
-		rack: ["mesh_24", "mesh_25"],
+		rack: ["R23", "R24"],
 	},
 	{
 		name: "Chaine Hifi",
-		rack: ["mesh_24", "mesh_25"],
+		rack: ["R23", "R24"],
 	},
 	{
 		name: "Machine à Pain",
-		rack: "mesh_24",
+		rack: "R23",
 	},
 	{
 		name: "Machine à Gâteaux",
-		rack: "mesh_24",
-	},
-	{
-		name: "Grille pain",
-		rack: "Rac5_1",
+		rack: "R23",
 	},
 	{
 		name: "Rasoir",
-		rack: "mesh_33",
+		rack: "R34",
 	},
 	{
 		name: "Tondeuse",
-		rack: "mesh_33",
+		rack: "R34",
 	},
 
 	{
 		name: "Machine a glaçons",
-		rack: "mesh_20",
+		rack: "R20",
 	},
 	{
 		name: "Casserole",
-		rack: "mesh_16",
+		rack: "R16",
 	},
 	{
 		name: "SodaStream",
-		rack: ["mesh_18", "mesh_19"],
+		rack: ["R18", "R19"],
 	},
 	{
 		name: "Broyeur",
-		rack: ["mesh_18", "mesh_19"],
+		rack: ["R18", "R19"],
 	},
 	{
 		name: "Brosse a dent électrique",
-		rack: "mesh_32",
+		rack: "R33",
 	},
 	{
 		name: "Epillateur",
-		rack: "mesh_32",
+		rack: "R33",
 	},
 	{
 		name: "TV",
@@ -186,42 +182,42 @@ export default [
 	},
 	{
 		name: "Cafetirière Capsule",
-		rack: ["mesh_18", "mesh_19"],
+		rack: ["R18", "R19"],
 	},
 	{
 		name: "Machine a Pâtes",
-		rack: "mesh_17",
+		rack: "R17",
 	},
 	{
 		name: "Station Météo",
-		rack: "mesh_17",
+		rack: "R17",
 	},
 	{
 		name: "Fabrique à Glace",
-		rack: "mesh_20",
+		rack: "R20",
 	},
 	{
 		name: "Extracteur de Jus",
-		rack: "mesh_20",
+		rack: "R20",
 	},
 	{
 		name: "Cuiseur à Riz",
-		rack: "mesh_21",
+		rack: "R21",
 	},
 	{
 		name: "Cuiseur Vapeur",
-		rack: "mesh_21",
+		rack: "R21",
 	},
 	{
 		name: "Robot Multi Fonction",
-		rack: "mesh_21",
+		rack: "R21",
 	},
 	{
 		name: "Croc Monsieur",
-		rack: "mesh_26",
+		rack: "R25",
 	},
 	{
 		name: "Libre Service",
-		rack: "mesh_26",
+		rack: "R25",
 	},
 ];
