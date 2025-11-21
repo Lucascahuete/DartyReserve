@@ -2,7 +2,7 @@ export default [
 	{
 		name: "reserveModel",
 		type: "gltfModel",
-		path: "models/reserveV5.glb",
+		path: "models/reserveV3.glb",
 	},
 	{
 		name: "etagereTexture",
