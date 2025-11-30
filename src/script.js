@@ -1,11 +1,12 @@
 import Experience from "./Experience/Experience";
-import Produit from "./Experience/Produit";
+import Produit from "../static/Produit.js";
 const storedProduits = localStorage.getItem("produits");
 const ProduitsNormalized = (
 	storedProduits ? JSON.parse(storedProduits) : Produit
 ).map((p) => ({
 	name: p.name,
 	rack: p.rack,
+	color: p.color || 'red',
 }));
 const experience = new Experience(document.querySelector("canvas.webgl"));
 
@@ -36,6 +37,7 @@ for (const element of ProduitsNormalized) {
 	const opt = document.createElement("option");
 	opt.text = element.name;
 	opt.value = element.rack;
+	opt.dataset.color = element.color;
 	opt.value2 = element.floor;
 	select.add(opt);
 }
@@ -47,10 +49,21 @@ function clickChercher() {
 	if (!select.value) {
 		alert.classList.replace("hiden", "alert");
 	} else {
-		experience.world.object.find(select.value);
+		const selectedOption = select.options[select.selectedIndex];
+		// Utiliser rouge par défaut si la couleur n'est pas définie
+		const color = selectedOption.dataset.color || 'red';
+
+		experience.world.object.find(select.value, color);
 		alert.classList.replace("alert", "hiden");
 		nouvelleRecherche.classList.replace("hiden", "nouvelle-recherche");
 		carreSelect.classList.replace("carre", "hiden");
+
+		// Afficher le pop-up avec les informations du produit
+		document.getElementById("foundProductName").textContent =
+			selectedOption.text;
+		document.getElementById("foundProductRack").textContent =
+			selectedOption.value;
+		document.getElementById("productFoundPopup").classList.remove("hidden");
 	}
 }
 
@@ -58,4 +71,5 @@ function clickNouvelleRecherche() {
 	experience.world.object.updateColor();
 	nouvelleRecherche.classList.replace("nouvelle-recherche", "hiden");
 	carreSelect.classList.replace("hiden", "carre");
+	document.getElementById("productFoundPopup").classList.add("hidden");
 }

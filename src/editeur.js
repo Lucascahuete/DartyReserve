@@ -1,4 +1,4 @@
-import Produit from "./Experience/Produit";
+import Produit from "../static/Produit.js";
 
 const tbody = document.getElementById("tbody");
 const form = document.getElementById("form");
