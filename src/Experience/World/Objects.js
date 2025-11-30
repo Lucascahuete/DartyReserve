@@ -26,22 +26,22 @@ export default class Objects {
 		// Matériaux de couleur pour les différents racks
 		this.colors = {
 			red: new THREE.MeshStandardMaterial({
-				color: new THREE.Color("#f01111ff"), // Rouge vif
+				color: new THREE.Color("rgba(240, 17, 17, 1)"), // Rouge vif
 			}),
 			yellow: new THREE.MeshStandardMaterial({
-				color: new THREE.Color("#fbde24ff"), // Jaune
+				color: new THREE.Color("rgba(251, 222, 36, 1)"), // Jaune
 			}),
 			green: new THREE.MeshStandardMaterial({
-				color: new THREE.Color("#10b929ff"), // Vert
+				color: new THREE.Color("rgba(16, 185, 41, 1)"), // Vert
 			}),
 			blue: new THREE.MeshStandardMaterial({
-				color: new THREE.Color("#1e5ec6ff"), // Bleu
+				color: new THREE.Color("rgba(30, 94, 198, 1)"), // Bleu
 			}),
 			purple: new THREE.MeshStandardMaterial({
-				color: new THREE.Color("#5936aaff"), // Violet (pour Sensible)
+				color: new THREE.Color("rgba(89, 54, 170, 1)"), // Violet (pour Sensible)
 			}),
 			white: new THREE.MeshStandardMaterial({
-				color: new THREE.Color("#ffffff"), // Blanc par défaut
+				color: new THREE.Color("rgba(255, 255, 255, 1)"), // Blanc par défaut
 			}),
 		};
 
