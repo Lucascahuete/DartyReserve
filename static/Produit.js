@@ -1,223 +1,299 @@
 export default [
 	{
 		name: "MicroOndes",
-		rack: ["R1", "R2", "R3"],
+		rack: ["6-1", "6-2", "6-3"],
 	},
 	{
 		name: "Robot Patissier",
-		rack: ["R2", "R3"],
+		rack: "10-1",
 	},
 	{
 		name: "Blender",
-		rack: "R22",
+		rack: ["4-1", "4-2"],
 	},
 	{
 		name: "Toner",
-		rack: ["R22", "R21"],
+		rack: ["4-1", "4-2"],
 	},
 	{
 		name: "Blender Chauffant",
-		rack: "R22",
+		rack: "4-1",
 	},
 	{
 		name: "Cafetière Expresso",
-		rack: ["R18", "R19"],
+		rack: ["3-5", "3-6", "3-7"],
 	},
 	{
 		name: "Pese Personne",
-		rack: "R1",
+		rack: "2-9",
 	},
 	{
 		name: "Fer a Repasser",
-		rack: "R12",
+		rack: "3-4",
 	},
 	{
 		name: "Ecran PC",
-		rack: ["R4", "R5"],
+		rack: ["2-2", "2-3", "2-4"],
 	},
 	{
 		name: "Unité Centrale",
-		rack: "R4",
+		rack: "2-4",
 	},
 	{
 		name: "Imprimante",
-		rack: ["R6", "R7"],
+		rack: ["2-1", "2-2", "2-5"],
 	},
 	{
 		name: "Trotinette Électrique",
-		rack: ["R4", "R5", "R6", "R7"],
+		rack: ["2-1", "2-2", "2-3", "2-4"],
 	},
 	{
 		name: "Centrale Vapeur",
-		rack: ["R13", "R12"],
+		rack: ["3-2", "3-4"],
 	},
 	{
 		name: "Nettoyeur Vapeur",
-		rack: ["R13", "R14", "R15"],
+		rack: ["3-3", "3-2"],
 	},
 	{
 		name: "Déshumidificateur",
-		rack: ["R28", "R29"],
+		rack: "5-3",
 	},
 	{
 		name: "Humidificateur",
-		rack: ["R28", "R29"],
+		rack: "5-3",
 	},
 	{
 		name: "Chauffage Soufflant",
-		rack: ["R28", "R29"],
+		rack: "5-3",
 	},
 	{
 		name: "Radiateur Électrique",
-		rack: ["R28", "R29"],
+		rack: "5-3",
 	},
 	{
 		name: "Purificateur d'Air",
-		rack: ["R28", "R29"],
+		rack: "5-3",
 	},
 	{
 		name: "Aspirateur Main",
-		rack: ["R11", "R10"],
+		rack: ["2-6", "2-7"],
 	},
 	{
 		name: "Crépière",
-		rack: "R27",
+		rack: "5-2",
 	},
 	{
 		name: "Cocotte Minute",
-		rack: "R16",
+		rack: "7-2",
 	},
 	{
 		name: "Friteuse",
-		rack: "R30",
+		rack: "1-3",
 	},
 	{
 		name: "Air Fryer",
-		rack: ["R32", "R31", "R30"],
+		rack: ["1-1", "1-2", "1-3"],
 	},
 	{
 		name: "Cookeo",
-		rack: "",
+		rack: "7-1",
 	},
 	{
 		name: "Aspirateur Traineau",
-		rack: ["R11", "R9", "R10"],
+		rack: ["2-5", "2-6", "2-7"],
 	},
 	{
 		name: "Aspirateur Robot",
-		rack: "R8",
+		rack: "9-5",
 	},
 	{
 		name: "Aspirateur Balai",
-		rack: ["R13", "R14", "R15"],
+		rack: ["3-1", "3-2", "9-4"],
 	},
 	{
 		name: "Ventilateur",
-		rack: ["R28", "R29"],
+		rack: "5-3",
 	},
 	{
 		name: "Plancha",
-		rack: ["R27", "R26"],
+		rack: "5-3",
 	},
 	{
 		name: "Tireuse a biere",
-		rack: ["R27", "R26"],
+		rack: "5-3",
 	},
 	{
 		name: "Enceinte",
-		rack: ["R23", "R24"],
+		rack: ["4-4", "4-5", "4-6"],
 	},
 	{
 		name: "Platine Vinyle",
-		rack: ["R23", "R24"],
+		rack: ["4-5", "4-6"],
 	},
 	{
 		name: "Chaine Hifi",
-		rack: ["R23", "R24"],
+		rack: "4-6",
 	},
 	{
 		name: "Machine à Pain",
-		rack: "R23",
+		rack: "4-2",
 	},
 	{
 		name: "Machine à Gâteaux",
-		rack: "R23",
+		rack: "7-2",
 	},
 	{
 		name: "Rasoir",
-		rack: "R34",
+		rack: "2-9",
 	},
 	{
 		name: "Tondeuse",
-		rack: "R34",
+		rack: "2-9",
 	},
 
 	{
 		name: "Machine a glaçons",
-		rack: "R20",
+		rack: "12",
 	},
 	{
 		name: "Casserole",
-		rack: "R16",
+		rack: "3-8",
 	},
 	{
 		name: "SodaStream",
-		rack: ["R18", "R19"],
+		rack: ["3-5", "3-6", "3-7"],
 	},
 	{
 		name: "Broyeur",
-		rack: ["R18", "R19"],
+		rack: ["3-5", "3-6"],
 	},
 	{
 		name: "Brosse a dent électrique",
-		rack: "R33",
+		rack: "3-9",
 	},
 	{
 		name: "Epillateur",
-		rack: "R33",
+		rack: "3-9",
 	},
 	{
 		name: "TV",
-		rack: "",
+		rack: ["8-1", "8-2", "8-3"],
 	},
 	{
 		name: "Cafetirière Capsule",
-		rack: ["R18", "R19"],
+		rack: ["3-7", "3-6"],
 	},
 	{
 		name: "Machine a Pâtes",
-		rack: "R17",
+		rack: "4-3",
 	},
 	{
 		name: "Station Météo",
-		rack: "R17",
+		rack: "3-8",
 	},
 	{
 		name: "Fabrique à Glace",
-		rack: "R20",
+		rack: "7-2",
 	},
 	{
 		name: "Extracteur de Jus",
-		rack: "R20",
+		rack: "4-3",
 	},
 	{
 		name: "Cuiseur à Riz",
-		rack: "R21",
+		rack: "4-2",
 	},
 	{
 		name: "Cuiseur Vapeur",
-		rack: "R21",
+		rack: "4-3",
 	},
 	{
 		name: "Robot Multi Fonction",
-		rack: "R21",
+		rack: "10-2",
 	},
 	{
 		name: "Croc Monsieur",
-		rack: "R25",
+		rack: "5-2",
 	},
 	{
-		name: "Libre Service",
-		rack: "R25",
+		name: "grille Pain",
+		rack: "5-1",
+	},
+	{
+		name: "Bouilloire",
+		rack: "5-1",
+	},
+	{
+		name: "Raclette",
+		rack: "5-2",
+	},
+	{
+		name: "Fondue",
+		rack: "5-2",
+	},
+	{
+		name: "Batteur Électrique",
+		rack: "5-1",
+	},
+	{
+		name: "Mixeur Plongeant",
+		rack: "5-1",
+	},
+	{
+		name: "Hachoir",
+		rack: "4-3",
+	},
+	{
+		name: "Machine sous Vide",
+		rack: "5-1",
+	},
+	{
+		name: "Cafétière Filtre",
+		rack: "5-1",
+	},
+	{
+		name: "Console",
+		rack: ["4-4", "4-5"],
+	},
+	{
+		name: "Video Projecteur",
+		rack: "4-6",
+	},
+	{
+		name: "Barbecue Électrique",
+		rack: "5-4",
+	},
+	{
+		name: "Casque Audio",
+		rack: "4-4",
+	},
+	{
+		name: "Smeg",
+		rack: "9-4",
+	},
+	{
+		name: "Table de Cuisson",
+		rack: "11",
+	},
+	{
+		name: "Four Posable",
+		rack: "12",
+	},
+	{
+		name: "Overkart",
+		rack: "12",
+	},
+	{
+		name: "Micro Onde Encastrable",
+		rack: "13",
+	},
+	{
+		name: "Hotte",
+		rack: "13",
+	},
+	{
+		name: "Barre de Son",
+		rack: ["8-3", "13"],
 	},
 ];
